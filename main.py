@@ -1,5 +1,7 @@
 from data import example_data as example
 import nearest_neighbor as nn
+import graph_display as gd
+
 
 
 if __name__ == '__main__':
@@ -10,6 +12,7 @@ if __name__ == '__main__':
     trasa_najblizszy_sasiad, koszt_najblizszy_sasiad = nn.nearest_neighbor_search(graf)
 
     # wydrukuj wyniki algorytmu najbliższego sąsiada
-    print('Najlepsza ścieżka wg. algorytmu najbliższego sąsiada:')
+    # print('Najlepsza ścieżka wg. algorytmu najbliższego sąsiada:')
     print(trasa_najblizszy_sasiad)
-    print('Całkowity koszt ścieżki: ', koszt_najblizszy_sasiad)
+    # print('Całkowity koszt ścieżki: ', koszt_najblizszy_sasiad)
+    gd.graph_display(graf, trasa_najblizszy_sasiad, koszt_najblizszy_sasiad)
