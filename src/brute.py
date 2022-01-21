@@ -13,7 +13,6 @@ def brute(ds):
         totDist = 0
         for i in range(len(permutation) - 1):
             totDist += ds[permutation[i]][permutation[i + 1]]
-        print(totDist)
         return totDist
 
     noCheckpoints = len(ds[0])
@@ -27,8 +26,6 @@ def brute(ds):
         if lowest > d:
             lowest = d
             bestPermutation = p
-    print(lowest)
-    print(bestPermutation)
     return bestPermutation, lowest
 
     # with ThreadPoolExecutor(max_workers=cpu_count()) as ex:

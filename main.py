@@ -1,5 +1,5 @@
 from data import example_data as example
-# import nearest_neighbor as nn
+import nearest_neighbor as nn
 # import graph_display as gd
 #
 from src.brute import brute
@@ -16,7 +16,7 @@ if __name__ == '__main__':
     trasa_brute, koszt_brute = brute(graf)
 
     # # uruchom algorytm najbliższego sąsiada
-    # trasa_najblizszy_sasiad, koszt_najblizszy_sasiad = nn.nearest_neighbor_search(graf)
+    trasa_najblizszy_sasiad, koszt_najblizszy_sasiad = nn.nearest_neighbor_search(graf)
     #
     # # wydrukuj wyniki algorytmu najbliższego sąsiada
     # # print('Najlepsza ścieżka wg. algorytmu najbliższego sąsiada:')
