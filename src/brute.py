@@ -6,6 +6,8 @@ from src.timer_decorator import timeIt
 # from tqdm import tqdm
 import time
 
+import  sys
+
 
 @timeIt
 def brute(ds):
@@ -17,6 +19,7 @@ def brute(ds):
 
     noCheckpoints = len(ds[0])
     permutations = itertools.permutations([i for i in range(noCheckpoints)], noCheckpoints)
+
 
     lowest = sum(ds[0])
     bestPermutation = list()
