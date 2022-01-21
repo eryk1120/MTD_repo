@@ -1,3 +1,7 @@
+from src.timer_decorator import timeIt
+
+
+@timeIt
 def nearest_neighbor_search(neighbor_matrix):
     # zmienne na najlepszą ścieżkę
     najlepszy_koszt = 0
